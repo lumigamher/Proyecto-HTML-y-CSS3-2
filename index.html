@@ -24,22 +24,26 @@
         <!-- <a href="#" class="botonCerrar" >
             <svg xmlns="http://www.w3.org/2000/svg" width="2rem" height="2rem" viewBox="0 0 24 24"><path fill="currentColor" d="m12 13.4l-2.9 2.9q-.275.275-.7.275t-.7-.275q-.275-.275-.275-.7t.275-.7l2.9-2.9l-2.9-2.875q-.275-.275-.275-.7t.275-.7q.275-.275.7-.275t.7.275l2.9 2.9l2.875-2.9q.275-.275.7-.275t.7.275q.3.3.3.713t-.3.687L13.375 12l2.9 2.9q.275.275.275.7t-.275.7q-.3.3-.712.3t-.688-.3z"/></svg></a> -->
         <ul class="menu">
-            <li><a href="#pagina__principal">INICIO</a></li>
-            <li><a href="#productos">TIENDA</a>
-                <ul class="sub__menu">
-                    <li><a href="#productos">Bolsos de Mano</a></li>
-                    <li><a href="">Mochilas Modernas</a></li>
-                    <li><a href="">Carteras Clásicas</a></li>
-                    <li><a href="">Bolsos de Hombro</a></li>
-                    <li><a href="">Collares Elegantes</a></li>
-                    <li><a href="">Anillos de Moda</a></li>
-                    <li><a href="">Manillas y Pulseras</a></li>
-                    <li><a href="">Topos y Pendientes</a></li>
-                    <li><a href="">Sets de Accesorios</a></li>
-                    <li><a href="">Accesorios de Temporada</a></li>
-                </ul>            
+            <li><a href="#pagina__principal" class="link">INICIO</a></li>
+            <li><a href="" class="link">NOSOTROS</a></li>
+            <li><a href="#productos" class="link">TIENDA
+                <input type="checkbox" class="check">
+            </a>
+                <div class="contenido">
+                    <ul class="sub__menu">
+                        <li class="sub__item"><a href="#productos">Bolsos de Mano</a></li>
+                        <li class="sub__item"><a href="">Mochilas Modernas</a></li>
+                        <li class="sub__item"><a href="">Carteras Clásicas</a></li>
+                        <li class="sub__item"><a href="">Bolsos de Hombro</a></li>
+                        <li class="sub__item"><a href="">Collares Elegantes</a></li>
+                        <li class="sub__item"><a href="">Anillos de Moda</a></li>
+                        <li class="sub__item"><a href="">Manillas y Pulseras</a></li>
+                        <li class="sub__item"><a href="">Topos y Pendientes</a></li>
+                        <li class="sub__item"><a href="">Sets de Accesorios</a></li>
+                        <li class="sub__item"><a href="">Accesorios de Temporada</a></li>
+                    </ul>   
+                </div>         
             </li>
-            <li><a href="">NOSOTROS</a></li>
         </ul>
         <div class="logoCentro"><a href="#pagina__principal"><img src="sourse/img/logo.png" alt="logo"></a></div>
         <button class="login"><a href="">LOGIN</a></button> 
@@ -54,11 +58,11 @@
         </section>
 
         <section class="productos" id="productos">
-            <h2>Bolsos de Moda</h2>
+            <h2 class="titulo__categoria">Bolsos de Moda</h2>
             <div class="card">
                 <section class="galeria">
                     <div class="img__principal">
-                        <img class="img__principal" src="sourse/img/bolso1_.webp" alt="">
+                        <img src="sourse/img/bolso1_.webp" alt="">
                     </div>
                     <img class="img" src="sourse/img/bolso1_.webp" alt="">
                     <img class="img" src="sourse/img/bolso2_.webp" alt="">
@@ -81,109 +85,20 @@
                         <span class="precio__promo"><strong>$110.000</strong></span>
                         <span class="precio__t"><i><s>$150.000</s></i></span>
                     </div>
-                    <Button><strong>Obtener</strong></Button>
-                </section>
-            </div>
-        </section>
 
-        <section class="productos" id="productos">
-            <h2>Bolsos de Moda</h2>
-            <div class="card">
-                <section class="galeria">
-                    <div class="img__principal">
-                        <img class="img__principal" src="sourse/img/bolso1_.webp" alt="">
+                    <div class="boton"> 
+                        <Button>
+                            <strong>Obtener</strong>
+                        </Button>
+                        <input type="checkbox" class="check_agregar">
                     </div>
-                    <img class="img" src="sourse/img/bolso1_.webp" alt="">
-                    <img class="img" src="sourse/img/bolso2_.webp" alt="">
-                    <img class="img" src="sourse/img/bolso3_.webp" alt="">
-                    <img class="img" src="sourse/img/bolso4_.webp" alt="">
-                </section>
-                <section class="info__producto">
-                    <h2>Bolso Bonny</h2>
-                    <div class="estrellas">
-                        <i class='bx bxs-star' ></i>
-                        <i class='bx bxs-star' ></i>
-                        <i class='bx bxs-star' ></i>
-                        <i class='bx bxs-star-half' ></i>
-                        <i class='bx bx-star'></i>
-                    </div>
-                    <p>
-                        Bolso de hombro tipo bandolera con solapa de pata de gallo Vintage para mujer, bolso de mano, monederos de diseñador, bolsos de mensajero para mujer 2023
-                    </p>
-                    <div class="precio">
-                        <span class="precio__promo"><strong>$110.000</strong></span>
-                        <span class="precio__t"><i><s>$150.000</s></i></span>
-                    </div>
-                    <Button><strong>Obtener</strong></Button>
+                    
+                    <section>
+                        
+                    </section>
+                    
                 </section>
             </div>
-        </section>
-
-        <section class="productos" id="productos">
-            <h2>Bolsos de Moda</h2>
-            <div class="card">
-                <section class="galeria">
-                    <div class="img__principal">
-                        <img class="img__principal" src="sourse/img/bolso1_.webp" alt="">
-                    </div>
-                    <img class="img" src="sourse/img/bolso1_.webp" alt="">
-                    <img class="img" src="sourse/img/bolso2_.webp" alt="">
-                    <img class="img" src="sourse/img/bolso3_.webp" alt="">
-                    <img class="img" src="sourse/img/bolso4_.webp" alt="">
-                </section>
-                <section class="info__producto">
-                    <h2>Bolso Bonny</h2>
-                    <div class="estrellas">
-                        <i class='bx bxs-star' ></i>
-                        <i class='bx bxs-star' ></i>
-                        <i class='bx bxs-star' ></i>
-                        <i class='bx bxs-star-half' ></i>
-                        <i class='bx bx-star'></i>
-                    </div>
-                    <p>
-                        Bolso de hombro tipo bandolera con solapa de pata de gallo Vintage para mujer, bolso de mano, monederos de diseñador, bolsos de mensajero para mujer 2023
-                    </p>
-                    <div class="precio">
-                        <span class="precio__promo"><strong>$110.000</strong></span>
-                        <span class="precio__t"><i><s>$150.000</s></i></span>
-                    </div>
-                    <Button><strong>Obtener</strong></Button>
-                </section>
-            </div>
-        </section>
-
-        <section class="productos" id="productos">
-            <h2>Bolsos de Moda</h2>
-            <div class="card">
-                <section class="galeria">
-                    <div class="img__principal">
-                        <img class="img__principal" src="sourse/img/bolso1_.webp" alt="">
-                    </div>
-                    <img class="img" src="sourse/img/bolso1_.webp" alt="">
-                    <img class="img" src="sourse/img/bolso2_.webp" alt="">
-                    <img class="img" src="sourse/img/bolso3_.webp" alt="">
-                    <img class="img" src="sourse/img/bolso4_.webp" alt="">
-                </section>
-                <section class="info__producto">
-                    <h2>Bolso Bonny</h2>
-                    <div class="estrellas">
-                        <i class='bx bxs-star' ></i>
-                        <i class='bx bxs-star' ></i>
-                        <i class='bx bxs-star' ></i>
-                        <i class='bx bxs-star-half' ></i>
-                        <i class='bx bx-star'></i>
-                    </div>
-                    <p>
-                        Bolso de hombro tipo bandolera con solapa de pata de gallo Vintage para mujer, bolso de mano, monederos de diseñador, bolsos de mensajero para mujer 2023
-                    </p>
-                    <div class="precio">
-                        <span class="precio__promo"><strong>$110.000</strong></span>
-                        <span class="precio__t"><i><s>$150.000</s></i></span>
-                    </div>
-                    <Button><strong>Obtener</strong></Button>
-                </section>
-            </div>
-        </section>
       </main>
     
       <footer class="footer">
