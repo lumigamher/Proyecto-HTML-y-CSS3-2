@@ -62,10 +62,10 @@ body {
     background-color: white; 
     width: 100vw;
     position: fixed;
+    z-index: 10;
 }
 
 .menu{
-    z-index: 100;
     padding: 0;
     margin: 0;
     position: fixed;
@@ -202,14 +202,16 @@ body {
 }
 
 .pagina__principal {
-    /* scroll-snap-align: start; */
+    scroll-snap-align: start;
     height: 100vh;
 }
 
 .productos {
-    height: 90vh;
     padding-top: 1rem;
-    /* scroll-snap-align: start; */
+    display: flex;
+    flex-flow: wrap;
+    place-content: center;
+    scroll-snap-align: start;
 }
 
 .productos .titulo__categoria{
@@ -230,6 +232,7 @@ body {
 }
 .galeria {
     height: 45vh;
+    width: 75vw;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     place-items: center;
@@ -237,25 +240,34 @@ body {
     margin: 0;
     padding: 0;
     gap: .5rem;
+    object-fit: cover;
 }
 
-.img__principal {
+.galeria .img__principal {
     display: grid;
     grid-column: span 4; 
     grid-row: span 2;
     transition: 0.3s transform;
-}
-
-.img__principal img {
-    width: 100%;
-    height: 100%;
+    place-items: center;
+    place-content: center;
     object-fit: cover; 
+    max-width: 100%;
+    max-height: 100%;
+    overflow: hidden;
     border-radius: 1rem;
 }
 
-.img {
+.galeria .img__principal img {
     width: 100%;
     height: 100%;
+}
+
+.galeria .img {
+    width: 100%;
+    height: 100%;
+    max-width: 100%;
+    max-height: 100%;
+    overflow-x: hidden;
     border-radius: 1rem;
     object-fit: cover; 
     transition: 0.3s transform;  
@@ -304,6 +316,7 @@ body {
     border-radius: 1rem;
     transition: 0.3s transform;
     position: relative;
+    z-index: 0;
 }
 .info__producto button{
     border: 0;
