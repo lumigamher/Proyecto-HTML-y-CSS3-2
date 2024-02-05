@@ -206,6 +206,60 @@ body {
     height: 100vh;
 }
 
+.pagina__principal .fondo {
+    height: 100vh;
+    width: 100%;
+}
+
+.fondo {
+    margin: 0;
+    padding: 0;
+    background-image: url('../sourse/img/background.jpg');
+    background-size: cover;
+    background-position: bottom;
+    height: 100vh;
+    display: flex;
+    place-items: center;
+    place-content: center;
+    color: var(--primary-color);
+    text-align: center;
+    position: relative;
+}
+
+.caja {
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0.5); /* Fondo semi-transparente */
+    padding: 1.5rem;
+    border-radius: 1rem;
+    top: 10rem;
+}
+
+.caja h1{ 
+    margin: 0 0 .3rem 0;
+    padding: 0;
+    font-size: 3rem;
+}
+
+.caja p{
+    margin: 0 0 .3rem 0;
+    padding: 0;
+}
+
+
+.caja button {
+    background-color: #FF75B3;
+    color: #ffffff;
+    width: 6rem;
+    padding: 0.91rem; /* Cambiado el punto por 0 */
+    border: 0;
+    border-radius: 1rem;
+    transition: 0.3s transform;
+}
+
+.caja button:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 10px rgba(255, 117, 179, 0.7); /* Agregado un valor de sombra */
+}
 .productos {
     padding-top: 1rem;
     display: flex;
