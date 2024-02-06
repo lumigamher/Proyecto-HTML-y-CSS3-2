@@ -9,15 +9,26 @@ document.addEventListener('DOMContentLoaded', function() {
     const botonAgregar = ventanaAgregar.querySelector('button');
     const cerrarVentana = ventanaAgregar.querySelector('.cerrar__ventana');
 
-    botonObtener.addEventListener('click', function() {
+    const icono = document.querySelector('.icono');
+    const carrito = document.querySelector('.carrito');
+    const botonCarrito = carrito.querySelector('button');
+    const cerrarCarrito = carrito.querySelector('.cerrar__ventana');
+
+    // Función para abrir o cerrar la ventana agregar
+    function toggleVentanaAgregar() {
         ventanaAgregar.classList.toggle('mostrar');
-    });
+    }
 
-    botonAgregar.addEventListener('click', function() {
-        ventanaAgregar.classList.remove('mostrar');
-    });
+    // Función para abrir o cerrar la ventana carrito
+    function toggleVentanaCarrito() {
+        carrito.classList.toggle('mostrar');
+    }
 
-    cerrarVentana.addEventListener('click', function() {
-        ventanaAgregar.classList.remove('mostrar');
-    });
+    botonObtener.addEventListener('click', toggleVentanaAgregar);
+    botonAgregar.addEventListener('click', toggleVentanaAgregar);
+    cerrarVentana.addEventListener('click', toggleVentanaAgregar);
+
+    icono.addEventListener('click', toggleVentanaCarrito);
+    botonCarrito.addEventListener('click', toggleVentanaCarrito);
+    cerrarCarrito.addEventListener('click', toggleVentanaCarrito);
 });

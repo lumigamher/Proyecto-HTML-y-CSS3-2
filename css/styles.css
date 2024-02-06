@@ -386,19 +386,10 @@ body {
     position: absolute;
 }
 
-.check_agregar {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    opacity: 1;
-    cursor: pointer;
-}
-
 .info__producto .boton:hover{
     box-shadow: 0.1rem 0.1rem 1rem var(--primary-color);
     transform: scale(1.1);
 }
-
 
 .ventana__agregar {
     position: fixed;
@@ -494,4 +485,123 @@ body {
     background-color: #f74a98;
 }
 
+.carrito {
+    position: fixed;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 0;
+    border-radius: 1rem;
+    box-shadow: 0 0 30rem #000;
+    z-index: 100;
+    width: 20rem;
+}
 
+
+
+.producto__agregado {
+    display: grid;
+    text-align: start;
+    padding: .5rem;
+    gap: 1rem;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr; 
+    grid-template-areas:
+      "img img titulo titulo basura basura"
+      "img img cantidad cantidad precio precio";
+}
+.producto__agregado > img{
+    width: 6rem;
+    height: 6rem;
+    object-fit: cover;
+    overflow: hidden;
+    grid-area: img;
+    border-radius: 1rem;
+    margin-top: .5rem;
+
+}
+.titulo__articulo {
+    grid-area: titulo;
+    font-size: clamp(1rem, 3vw, 1rem);
+    padding: 0;
+    margin: .3rem 0 0 0;
+    color: var(--primary-color);
+}
+
+.basura {
+    grid-area: basura;
+    top: .5rem;
+    right: 1rem;
+    position: relative;
+    display: flex;
+    justify-content: end;
+    color: var(--primary-color);
+}
+
+.info__producto > .cantidad__container{
+    grid-area: cantidad;
+}
+.preciob{
+    grid-area: precio;
+}
+
+.preciob .precio__promob {
+    color: var(--primary-color);
+    font-size: clamp(1rem, 2vw, 1rem);
+}
+.preciob ,.precio__tb {
+    font-size: clamp(0.5rem, 1vw, 1rem);
+    color: lightslategrey;
+}
+
+.lista__productos{
+    height: 40vh;
+    overflow-y: scroll;
+}
+
+.total {
+    display: grid;
+    align-items: center;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: 
+        "total valor"
+        "total pagar";
+}
+
+.total > h3{
+    grid-area: total;
+    font-size: clamp(1.5rem, 1vw, 1.5rem);
+    margin-left: 1rem;
+    margin-top: -2.3rem;
+}
+
+.total > p{
+    grid-area: valor;
+    font-size: clamp(1.1rem, 1vw, 1.5rem);
+
+}
+
+.pagar {
+    grid-area: pagar;
+    font-size: clamp(1rem, 1vw, 1rem);
+    border: 0;
+    border-radius: 1rem;
+    background-color: var(--primary-color);
+    color: white;
+    width: 6rem;
+    margin: 0;
+    padding: 1rem 1rem ;
+    transition: 300ms transform;
+}
+
+.pagar:hover{
+    box-shadow: 0.1rem 0.1rem 1rem var(--primary-color);
+    transform: scale(1.1);
+}
+
+.titulocarrito {
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
