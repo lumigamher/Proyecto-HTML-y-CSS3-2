@@ -42,7 +42,7 @@
   }
 
 body {
-    background-color: var(--background-color);
+    background-color: #ffffff;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -278,17 +278,20 @@ body {
     display: flex;
     flex-direction: column;
     place-content: center;
+    align-items: center;
     box-shadow: 0.1rem 0.1rem 1rem #0000007a;
     border-radius: 1rem;
     margin: 0rem 2rem 2rem 2rem ;
-    padding: 3rem 1rem 2rem 1rem;
+    padding: 2rem 1rem 4rem 1rem;
     height: 70vh;
+    background-color: #ffffff;
 }
 .galeria {
     height: 48vh;
-    width: 75vw;
+    width: 78vw;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto;
     place-items: center;
     place-content: center;
     margin: 0;
@@ -370,10 +373,8 @@ body {
     font-size: 1.1rem;
     border-radius: 1rem;
     transition: 0.3s transform;
-    position: relative;
-    z-index: 0;
 }
-.info__producto button{
+.info__producto .boton{
     border: 0;
     background-color: var(--primary-color);
     color: white;
@@ -389,7 +390,7 @@ body {
     position: absolute;
     width: 100%;
     height: 100%;
-    opacity: 0;
+    opacity: 1;
     cursor: pointer;
 }
 
@@ -397,3 +398,100 @@ body {
     box-shadow: 0.1rem 0.1rem 1rem var(--primary-color);
     transform: scale(1.1);
 }
+
+
+.ventana__agregar {
+    position: fixed;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 0;
+    border-radius: 1rem;
+    box-shadow: 0 0 30rem #000;
+}
+
+.mostrar {
+    display: block;
+    padding-top: 0;
+    
+}
+
+.ventana__agregar .galeriav{
+    width: 15rem;
+}
+
+.ventana__agregar .img__principalv {
+    margin-top: 0;
+    padding-top: 0;
+    place-items: center;
+    place-content: center;
+    object-fit: cover; 
+    overflow: hidden;
+    border-radius: 1rem;
+}
+
+.ventana__agregar .img__principalv img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+}
+
+.cerrar__ventana {
+    display: flex;
+    align-items: end;
+    justify-content: end;
+    margin: 0;
+    padding: 0;
+    cursor: pointer;
+    font-size: 24px;
+    color: var(--primary-color);
+}
+
+.botonv {
+    display: grid;
+    grid-template-areas: "cantidad agregar";
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+    justify-content: space-between;
+    align-items: center;
+   
+}
+
+.cantidad__container {
+    grid-area: cantidad;
+    left: 0;
+}
+
+.cantidad {
+    width: 3rem; 
+    padding: .2rem;
+    text-align: center;
+    font-weight: bolder;
+    border-color: #ff75b35e;
+    border-radius: .5rem;
+    color: var(--primary-color);
+
+}
+
+.agregar__boton {
+    display: flex;
+    grid-area: agregar;
+    justify-content: end;
+    align-items: center;
+}
+
+.boton__carrito {
+    background-color: var(--primary-color);
+    color: var(--background-color);
+    border: 0;
+    padding: .5rem;
+    border-radius: .5rem;
+    transition: 300ms transform;
+}
+
+.boton__carrito:hover {
+    transform: scale(1.2);
+    background-color: #f74a98;
+}
+
+
