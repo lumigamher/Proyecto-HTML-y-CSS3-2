@@ -341,22 +341,22 @@ body {
 
 .precio .precio__promo {
     color: var(--primary-color);
-    font-size: clamp(1.5rem, 3vw, 2rem);
+    font-size: clamp(1rem, 3vw, 1.5rem);
 }
 .precio ,.precio__t {
-    font-size: clamp(0.7rem, 2vw, 1.4rem);
+    font-size: clamp(0.7rem, 2vw, 1.1rem);
     color: lightslategrey;
 }
 
 .info__producto h2{
     margin: 0 0 0 0;
     padding: 0;
-    font-size: clamp(1.5rem, 4vw, 1.8rem);
+    font-size: clamp(1.2rem, 4vw, 1.5rem);
     color: var(--primary-color);
 }
 
 .info__producto .estrellas i{
-    font-size: clamp(1rem, 5vw, 1.5rem);
+    font-size: clamp(.8rem, 5vw, 1.2rem);
     color: var(--accent-color);
 }
 .info__producto p{
